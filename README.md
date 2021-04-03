@@ -6,7 +6,7 @@ The [master](https://github.com/jonstelly/nx-multi/tree/master) branch has the r
 ## Steps to reproduce
 
 ```powershell
-git clone -b feature/symbolic-link
+git clone https://github.com/jonstelly/nx-multi.git
 cd nx-multi
 
 # RUN ONE OF THESE DEPENDING ON YOUR SHELL
