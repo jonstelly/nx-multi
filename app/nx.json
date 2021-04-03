@@ -18,6 +18,7 @@
   "projects": {
     "my-app": { "tags": [] },
     "my-app-e2e": { "tags": [], "implicitDependencies": ["my-app"] },
-    "app-core": { "tags": [] }
+    "app-core": { "tags": [] },
+    "fw-core": { "tags": [] }
   }
 }
