@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/core": ["libs/app/core/src/index.ts"]
+      "@app/core": ["libs/app/core/src/index.ts"],
+      "@fw/core": ["libs/fw/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

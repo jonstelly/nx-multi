@@ -179,6 +179,43 @@
           }
         }
       }
+    },
+    "fw-core": {
+      "projectType": "library",
+      "root": "libs/fw/core",
+      "sourceRoot": "libs/fw/core/src",
+      "prefix": "fw",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/fw/core/tsconfig.lib.json",
+            "project": "libs/fw/core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/fw/core/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/fw/core/src/**/*.ts",
+              "libs/fw/core/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/fw/core"],
+          "options": {
+            "jestConfig": "libs/fw/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
