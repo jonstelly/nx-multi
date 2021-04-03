@@ -1,8 +1,6 @@
 # Summary
 This repo demonstrates an issue with nx workspaces, where I try to reuse a library from one nx workspace in another either by manually symlinking a library or use NPM 7 workspaces.  If I replace the symlink with copying the whole library directory from one workspace to the other then everything works, so I think this might be a simple symlink issue.
 
-The [master](https://github.com/jonstelly/nx-multi/tree/master) branch has the results of only the Initial/Clean block below.  The [feature/symbolic-link](https://github.com/jonstelly/nx-multi/tree/feature/symbolic-link) branch has the results of the symlink section (***except for creating the symbolic link which you'll need to do yourself after cloning***)
-
 ## Steps to reproduce
 
 ```powershell
